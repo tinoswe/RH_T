@@ -96,3 +96,6 @@ legend("top",
        bty="n",
        horiz=TRUE)
 
+##get percentage f samples within 15-25 range
+#100*(length(df$T2[df$T2 > 15 && df$T2 < 25])/length(df$T2))
+
