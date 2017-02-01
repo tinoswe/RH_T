@@ -89,7 +89,7 @@ phr3 <- round(100. * length(df$HR2[(df$HR3 > 45) & (df$HR3 < 55)]) / length(df$H
 phr4 <- round(100. * length(df$HR2[(df$HR4 > 45) & (df$HR4 < 55)]) / length(df$HR4),1)
 phr5 <- round(100. * length(df$HR2[(df$HR5 > 45) & (df$HR5 < 55)]) / length(df$HR5),1)
 
-legend("top",
+legend("topright",
        c(paste("MOB 2: ",phr2,"% w.r."),
          paste("MOB 3: ",phr3,"% w.r."),
          paste("MOB 4: ",phr4,"% w.r."),
@@ -100,6 +100,6 @@ legend("top",
              "darkgreen",
              "darkviolet"),
        bty="n",
-       horiz=TRUE,
-       cex=.7)
+       horiz=FALSE,
+       cex=.9)
 
