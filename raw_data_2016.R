@@ -42,7 +42,7 @@ abline(h=25,
        col="red",
        lwd=2)
 
-legend("top",
+legend("topright",
        c("MOB 2",
          "MOB 3",
          "MOB 4",
@@ -53,7 +53,8 @@ legend("top",
              "darkgreen",
              "darkviolet"),
        bty="n",
-       horiz=TRUE)
+       horiz=FALSE,
+       cex=.9)
 
 #umidità
 
