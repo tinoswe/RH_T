@@ -1,6 +1,6 @@
 library(gdata)
 getwd()
-df <- read.xls("XLS_Files/MOB_Sep_2016.xlsx",
+df <- read.xls("XLS_Files/MOB_Dec_2016.xlsx",
                sheet=1,
                header=TRUE,
                as.is=TRUE)
@@ -23,7 +23,7 @@ plot(df$XT2,
      ylim=c(10,30),
      xlab="",
      ylab="Gradi [°C]",
-     main="Temperature reparto MOB - Settembre 2016")
+     main="Temperature reparto MOB - Dicembre 2016")
 lines(df$XT3,
       df$T3,
       col="darkblue")
@@ -62,10 +62,10 @@ plot(df$XT2,
      df$HR2,
      type="l",
      col="darkred",
-     ylim=c(0,80),
+     ylim=c(0,100),
      xlab="",
      ylab="Umidità [%HR]",
-     main="Umidità reparto MOB - Settembre 2016")
+     main="Umidità reparto MOB - Dicembre 2016")
 lines(df$XT3,
       df$HR3,
       col="darkblue")
@@ -103,4 +103,5 @@ legend("topright",
        bty="n",
        horiz=FALSE,
        cex=.9)
+
 
